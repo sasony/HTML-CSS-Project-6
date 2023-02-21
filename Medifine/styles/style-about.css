@@ -96,3 +96,42 @@ main p {
     border-radius: 5px;
     box-shadow: 1px 1px 5px #525252, -1px -1px 5px  #525252;
 }
+
+fieldset h2 {
+    text-align: center;
+    font-weight: 900;
+}
+
+fieldset {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px #525252, -3px -3px 5px  #525252;
+}
+
+fieldset label {
+    font-weight: 600;
+}
+
+#name, #email, #massage {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#submit-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #58a658;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#submit-btn:hover {
+    cursor: pointer;
+    background-color: #4ab44a;
+}

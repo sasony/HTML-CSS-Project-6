@@ -1,0 +1,98 @@
+/* CSS Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Body style */
+
+body {
+    background-color: #ededed;
+}
+
+/* Navigation bar style */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0 10%;
+}
+
+img[alt="medifine"] {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    font-weight: 900;
+}
+
+ul a {
+    text-decoration: none;
+    padding-right: 25px;
+    color: #222222;
+}
+
+nav ul li:first-child {
+    font-weight: 600;
+}
+
+/* Main section code */
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h3 {
+    color: #74c874;
+    font-size: 25px;
+}
+
+section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+section p {
+    font-weight: 600;
+}
+
+main p {
+    text-align: center;
+
+}
+
+.para {
+    margin-top: 20px;
+}
+
+.box {
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 60px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #525252, -1px -1px 5px  #525252;
+}

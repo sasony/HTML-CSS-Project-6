@@ -494,7 +494,7 @@ img[alt="logo"] {
     .logo-box {
         position: relative;
         top: -30px;
-        margin: auto;
+        margin: 0px 10px;
         width: 90%;
         height: 70px;
         background-color: #ffffff;

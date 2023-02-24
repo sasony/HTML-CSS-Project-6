@@ -403,10 +403,412 @@ img[alt="logo"] {
     font-weight: 400;
 }
 
-.footer-section2, .footer-section3, .footer-section4 {
+.footer-section2,
+.footer-section3,
+.footer-section4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
+}
+
+/* Media query start for responsive */
+
+@media only screen and (max-width: 576px) {
+    /* Header media query */
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.418)), url(../assets/images/mainBackground.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+    }
+
+    nav {
+        margin: 1.5% 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+    }
+
+    img[alt="RealEstate"] {
+        width: 50px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 10px;
+    }
+
+    .under-line {
+        background-color: #ffffff;
+        height: 2px;
+        margin: 0 60px;
+    }
+
+    .header-section {
+        margin: 6% 45% 5% 10%;
+    }
+
+    .header-section h1 {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .header-section p {
+        margin-top: 5px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .learnmore-btn {
+        margin-top: 10px;
+        padding: 6px 12px;
+        font-size: 10px;
+        font-weight: 600;
+        color: #ffffff;
+        background-color: #9d62d1;
+        border: none;
+        border-radius: 10px;
+        transition: background-color 500ms ease-in-out, padding 500ms ease-in;
+    }
+
+    /* logo box media style */
+
+    img[alt="logoName"] {
+        width: 50px;
+    }
+    
+    .logo-box {
+        position: relative;
+        top: -30px;
+        margin: auto;
+        width: 90%;
+        height: 70px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 15px;
+    }
+
+    /* main section media style */
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main h1 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 900;
+    }
+    
+    img[alt="card"] {
+        width: 150px;
+        height: 180px;
+        border-radius: 25px;
+    }
+    
+    .galery {
+        margin-top: 8%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        row-gap: 5px;
+        column-gap: 1em;
+    }
+    
+    .galery-card {
+        background-color: #ffffff;
+        width: 140px;
+        height: 50px;
+        border-radius: 10px;
+        position: relative;
+        top: -40px;
+        left: 6px;
+    }
+    
+    .galery-card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        line-height: 20px;
+    }
+    
+    .card-detail h3 {
+        font-size: 13px;
+    }
+    
+    .card-detail p {
+        font-size: 8px;
+        font-weight: 700;
+        color: #5353fc;
+    }
+    
+    .detail-btn {
+        padding: 6px 12px;
+        color: #ffffff;
+        font-size: 8px;
+        font-weight: 600;
+        border: none;
+        background-color: #5353fc;
+        border-radius: 10px;
+    }
+    
+    .galery-itm2,
+    .galery-itm5,
+    .galery-itm8 {
+        position: relative;
+        top: 10px;
+    }
+    
+    .galery-itm3,
+    .galery-itm4,
+    .galery-itm9 {
+        position: relative;
+        top: 20px;
+    }
+
+    /* early bookin 1 media code */
+
+    .book-container {
+        width: 100vw;
+        height: 30vh;
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        /* background-color: green; */
+    }
+    
+    .book-left {
+        width: 50%;
+        height: 30vh;
+    }
+    
+    img[alt="featureImageBg1"] {
+        width: 200px;
+    }
+    
+    img[alt="featuresImage1"] {
+        width: 140px;
+        height: 140px;
+        border-radius: 25px;
+        position: relative;
+        bottom: 12em;
+        left: 2.5em;
+    }
+    
+    .book-right {
+        width: 50%;
+        height: 30vh;
+        margin-right: 10%;
+    }
+    
+    .book-right h1 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    
+    .book-right p {
+        margin-top: 10px;
+        font-size: 8px;
+        font-weight: 500;
+        color: #494949;
+    }
+    
+    .early-btn {
+        margin-top: 20px;
+        padding: 6px 12px;
+        color: #ffffff;
+        font-size: 8px;
+        font-weight: 600;
+        border: none;
+        background-color: #5353fc;
+        border-radius: 10px;
+        transition: background-color 500ms ease-out;
+    }
+    
+    .early-btn:hover {
+        background-color: #ca61f3;
+        cursor: pointer;
+    }
+
+    /* early booking 2 media code */
+
+    .book-container2 {
+        margin-top: 30px;
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: green; */
+    }
+    
+    .book-left2 {
+        width: 50%;
+        height: 30vh;
+        margin-right: 10%;
+    }
+    
+    .book-left2 h1 {
+        font-size: 25px;
+        font-weight: 900;
+    }
+    
+    .book-left2 p {
+        margin-top: 10px;
+        font-size: 8px;
+        font-weight: 500;
+        color: #494949;
+    }
+    
+    .book-right2 {
+        width: 50%;
+        height: 30vh;
+    }
+    
+    img[alt="featuresImage2"] {
+        width: 140px;
+        height: 140px;
+        border-radius: 25px;
+        position: absolute;
+        right: 1em;
+        z-index: 1;
+    }
+    
+    img[alt="featureImageBg2"] {
+        width: 230px;
+        position: absolute;
+        right: 0px;
+    }
+
+    /* newsletter section media code */
+    
+    .newsletter {
+        background-color: #6363ff;
+        height: 250px;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        border-radius: 25px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .newsletter h1 {
+        font-size: 25px;
+    }
+    
+    .newsletter p {
+        font-size: 8px;
+        margin-top: 5px;
+    }
+    
+    form {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .form-input {
+        width: 15em;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #5151d6;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    img[alt="email"] {
+        width: 15px;
+        height: 15px;
+        margin-left: 10px;
+    }
+    
+    #email {
+        background-color: #5151d6;
+        border: none;
+    }
+    
+    .subscribe-btn {
+        font-size: 8px;
+        width: 10em;
+        height: 30px;
+        color: #6363ff;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 30px;
+    }
+
+    /* footer section media code */
+
+    footer {
+        margin: 50px 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .footer-section1 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-right: 15%;
+    }
+    
+    img[alt="logo"] {
+        width: 80px;
+    }
+    
+    .social-icon {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .footer-section1 img[alt$="icon"] {
+        width: 25px;
+    }
+    
+    .footer-section1 h3 {
+        font-size: 8px;
+        font-weight: 600;
+    }
+    
+    .footer-section2,
+    .footer-section3,
+    .footer-section4 {
+        font-size: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+    }
 }
